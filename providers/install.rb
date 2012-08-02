@@ -166,7 +166,7 @@ def configure
 
     if current['monit']
       # Setup monitrc file
-      template "#{current['monit_conf_dir']}/redis-#{current['name']}.monitrc" do
+      template "#{current['monit_conf_dir']}/redis-#{current['name']}.conf" do
         source 'redis.monitrc.erb'
         owner 'root'
         group 'root'
